@@ -1,0 +1,115 @@
+{ pagePath: "/hotel/admin/roomreservation.php",
+  pageviews: 22,
+  exits: 1,
+  nextPageviews: 19,
+  nextExits: 1,
+  nextPages:
+   [ { pagePath: "/hotel/admin/custroom.php", pageviews: 7 },
+     { pagePath: "/hotel/admin/payement.php", pageviews: 4 },
+     { pagePath: "/hotel/admin/EMPLOYEE_ADD/index.php",
+       pageviews: 3 },
+     { pagePath: "/hotel/admin/EMPLOYEE_DELETE/delete.php",
+       pageviews: 3 },
+     { pagePath: "/hotel/admin/EMPLOYEE_ADD/INDEX.php",
+       pageviews: 2 } ],
+  percentExits: 0.05,
+  topNextPageProbability: 0.35 }
+
+
+{ pagePath: "/hotel/admin/payement.php",
+  pageviews: 9,
+  exits: 2,
+  nextPageviews: 7,
+  nextExits: 0,
+  nextPages:
+   [ { pagePath: "/hotel/admin/roomreservation.php", pageviews: 4 },
+     { pagePath: "/hotel/admin/EMPLOYEE_ADD/index.php",
+       pageviews: 1 },
+     { pagePath: "/hotel/admin/EMPLOYEE_ADD/INDEX.php",
+       pageviews: 1 },
+     { pagePath: "/hotel/admin/EMPLOYEE_DELETE/delete.php",
+       pageviews: 1 } ],
+  percentExits: 0.2222222222222222,
+  topNextPageProbability: 0.4444444444444444 }
+
+
+{ pagePath: "/hotel/admin/custroom.php",
+  pageviews: 7,
+  exits: 0,
+  nextPageviews: 7,
+  nextExits: 0,
+  nextPages:
+   [ { pagePath: "/hotel/admin/roomreservation.php", pageviews: 6 },
+     { pagePath: "/hotel/admin/payement.php", pageviews: 1 } ],
+  percentExits: 0,
+  topNextPageProbability: 0.8571428571428571 }
+
+
+{ pagePath: "/admin/roomreservation.php",
+  pageviews: 4,
+  exits: 1,
+  nextPageviews: 3,
+  nextExits: 0,
+  nextPages:
+   [ { pagePath: "/admin/custroom.php", pageviews: 2 },
+     { pagePath: "/hotel/admin/roomreservation.php", pageviews: 1 } ],
+  percentExits: 0.25,
+  topNextPageProbability: 0.5 }
+
+
+{ pagePath: "/hotel/admin/EMPLOYEE_ADD/index.php",
+  pageviews: 4,
+  exits: 0,
+  nextPageviews: 4,
+  nextExits: 0,
+  nextPages:
+   [ { pagePath: "/hotel/admin/roomreservation.php", pageviews: 3 },
+     { pagePath: "/hotel/admin/payement.php", pageviews: 1 } ],
+  percentExits: 0,
+  topNextPageProbability: 0.75 }
+
+
+{ pagePath: "/hotel/admin/EMPLOYEE_DELETE/delete.php",
+  pageviews: 4,
+  exits: 0,
+  nextPageviews: 4,
+  nextExits: 1,
+  nextPages:
+   [ { pagePath: "/hotel/admin/roomreservation.php", pageviews: 3 },
+     { pagePath: "/hotel/admin/payement.php", pageviews: 1 } ],
+  percentExits: 0,
+  topNextPageProbability: 0.75 }
+
+
+{ pagePath: "/hotel/admin/EMPLOYEE_ADD/INDEX.php",
+  pageviews: 3,
+  exits: 0,
+  nextPageviews: 3,
+  nextExits: 1,
+  nextPages:
+   [ { pagePath: "/hotel/admin/roomreservation.php", pageviews: 2 },
+     { pagePath: "/hotel/admin/payement.php", pageviews: 1 } ],
+  percentExits: 0,
+  topNextPageProbability: 0.6666666666666666 }
+
+
+{ pagePath: "/admin/custroom.php",
+  pageviews: 2,
+  exits: 0,
+  nextPageviews: 2,
+  nextExits: 1,
+  nextPages: [ { pagePath: "/admin/roomreservation.php", pageviews: 2 } ],
+  percentExits: 0,
+  topNextPageProbability: 1 }
+
+
+{ pagePath: "/admin/EMPLOYEE_ADD/",
+  pageviews: 1,
+  exits: 0,
+  nextPageviews: 1,
+  nextExits: 0,
+  nextPages: [ { pagePath: "/admin/roomreservation.php", pageviews: 1 } ],
+  percentExits: 0,
+  topNextPageProbability: 1 }
+
+
