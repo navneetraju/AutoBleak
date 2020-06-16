@@ -173,4 +173,4 @@ loop = res[0]
 prob = res[1]
 loop = [pages[i] for i in range(len(loop))]
 
-print(loop)
+print(json.dumps(loop))

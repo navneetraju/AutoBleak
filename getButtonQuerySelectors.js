@@ -201,8 +201,8 @@ function getStates(main_link,b_loop)
     }
 }
 
-main_link='http://localhost/lab-website/hp';
-b_loop=['/hp.html','/hp_projects.html','/hp_videos.html','/hp_students.html','/hp.html']
+main_link='http://localhost/PSRL';
+b_loop=['/hp/hp.html','/hp/hp_projects.html','/hp/hp_videos.html','/hp/hp_students.html','../index.html']
 //b_loop=['/index.html','/teaching.html','./hp/hp.html','../index.html'];
 //b_loop=['/index.html','/teaching.html','/hp/hp.html','/hp/hp_projects.html','/index.html'];
 //main_link='https://www.swiggy.com';
