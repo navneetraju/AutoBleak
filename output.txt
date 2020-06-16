@@ -1,1 +1,0 @@
-["/hotel/admin/roomreservation.php", "/hotel/admin/payement.php", "/hotel/admin/custroom.php", "/admin/roomreservation.php"]
