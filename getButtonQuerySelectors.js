@@ -148,9 +148,9 @@ function getPath(dom,x){
     //console.log(x);
     //x="/".concat(x);
     for(let i=0;i<list.length;i++){
-        console.log(list[i].href);
+        //console.log(list[i].href);
         if(list[i].href==x){
-            console.log('('+list[i].href+','+x+')');
+            //console.log('('+list[i].href+','+x+')');
             l=list[i];
             //p=getQuerySelector(dom,l);
             p=cssPath(l);
@@ -184,7 +184,7 @@ function main(i,page){
             res=getPath(dom,x);
             //res=dom.window.document.querySelector(res);
             final_op[i]=res;
-            console.log(i);
+            //console.log(i);
             //console.log(res);
         }
         else{
@@ -201,12 +201,14 @@ function getStates(main_link,b_loop)
     }
 }
 
-main_link='http://localhost/lab-website/hp';
-b_loop=['/hp.html','/hp_projects.html','/hp_videos.html','/hp_students.html','/hp.html']
-//b_loop=['/index.html','/teaching.html','./hp/hp.html','../index.html'];
-//b_loop=['/index.html','/teaching.html','/hp/hp.html','/hp/hp_projects.html','/index.html'];
-//main_link='https://www.swiggy.com';
-//b_loop=['/','/dabhoi']
+let rawdata = fs.readFileSync('output.json');
+let list_links = JSON.parse(rawdata);
+main_link=list_links['Main']
+b_loop=list_links['Loop']
+
+
+//main_link='http://localhost/lab-website/hp';
+//b_loop=['/hp.html','/hp_projects.html','/hp_videos.html','/hp_students.html','/hp.html']
 for(let i=0;i<b_loop.length-1;i++)
 {
     get_html(main_link,b_loop[i],i)
@@ -215,5 +217,5 @@ for(let i=0;i<b_loop.length-1;i++)
 //wait(10*1000).then(() => main(1,b_loop[0]));    
 wait(20*1000).then(() => getStates(main_link,b_loop));
 wait(40*1000).then(() => console.log(final_op));
-
+wait(1*1000).then(() => console.log(main_link.concat(b_loop[0])));
           
