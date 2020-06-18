@@ -16,3 +16,6 @@ To install dependencies using npm:
 ```
 npm install --save-dev --save-exact jsdom jsdom-global website-scraper website-scraper-puppeteer
 ```
+
+Autoscript.py is reading from queries.txt file
+and the output is written to autogenscript.js

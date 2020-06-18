@@ -1,0 +1,6 @@
+http://localhost/lab-website/hp/hp.html
+[
+  'html > body > div:nth-of-type(3) > div > div:nth-of-type(2) > a:nth-of-type(3)',
+  'html > body > div:nth-of-type(3) > div > div:nth-of-type(2) > a:nth-of-type(2)',
+  'html > body > div:nth-of-type(3) > div > div:nth-of-type(2) > a'
+]

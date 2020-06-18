@@ -1,6 +1,16 @@
-ar=['abc','bcd','def']  #array of javascript button paths , can be class name or button ids
+ar=[]
+f=open('queries.txt','r')
+exp=f.readline()
+exp=exp[:len(exp)-1]
+a=f.readline()
+a=f.readline()
+while(a != ']\n'):
+	ar.append(a[3:len(a)-3])
+	a=f.readline()
+	
+
 f=open("autogenscript.js","w+")   #here is the config file
-start="https://www.here.com/"     #here is the staring page
+start=exp     #here is the staring page
 f.write("exports.url =\""+start+"\";\n")
 f.write("exports.loop = [{\n")
 
