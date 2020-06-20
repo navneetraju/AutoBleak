@@ -7,9 +7,9 @@ Ubuntu: https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
 Windows: https://nodejs.org/en/download/ 
 ```
 
-To run getButttonQuerySelector.js: 
+To run getButtonQuerySelectors.js: 
 ```
-node getButttonQuerySelector.js (Ensure temporary folders are deleted before each run!)
+node getButtonQuerySelectors.js (Ensure temporary folders are deleted before each run!)
 ```
 
 To install dependencies using npm:
