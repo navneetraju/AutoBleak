@@ -145,11 +145,10 @@ function getQuerySelector(dom,elem) {
 
 function getPath(dom,x){
     list=dom.window.document.getElementsByTagName('a');
-    //console.log(x);
     //x="/".concat(x);
     for(let i=0;i<list.length;i++){
-        //console.log(list[i].href);
-        if(list[i].href==x){
+        
+        if(list[i].href.endsWith(x)){
             //console.log('('+list[i].href+','+x+')');
             l=list[i];
             //p=getQuerySelector(dom,l);
@@ -180,8 +179,8 @@ function main(i,page){
         if (!err){
             const dom = new JSDOM(html, { includeNodeLocations: true });
             list=dom.window.document.getElementsByTagName("a");
-            x=page.slice(1);
-            res=getPath(dom,x);
+            x=page.split("/");
+            res=getPath(dom,x[x.length-1]);
             //res=dom.window.document.querySelector(res);
             final_op[i]=res;
             //console.log(i);
@@ -206,7 +205,6 @@ let list_links = JSON.parse(rawdata);
 main_link=list_links['Main']
 b_loop=list_links['Loop']
 
-
 //main_link='http://localhost/lab-website/hp';
 //b_loop=['/hp.html','/hp_projects.html','/hp_videos.html','/hp_students.html','/hp.html']
 for(let i=0;i<b_loop.length-1;i++)
@@ -218,4 +216,3 @@ for(let i=0;i<b_loop.length-1;i++)
 wait(20*1000).then(() => getStates(main_link,b_loop));
 wait(40*1000).then(() => console.log(final_op));
 wait(1*1000).then(() => console.log(main_link.concat(b_loop[0])));
-          

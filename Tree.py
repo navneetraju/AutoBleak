@@ -171,6 +171,8 @@ res = get_Loop_fixed(graph, s, loop_size-1)
 
 loop = res[0]
 prob = res[1]
-loop = [pages[i] for i in range(len(loop))]
-
-print(json.dumps(loop))
+loop = [pages[i] for i in loop]
+output={}
+output["Main"]="http://localhost"
+output["Loop"]=loop
+print(json.dumps(output))
