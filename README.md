@@ -7,15 +7,22 @@ Ubuntu: https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
 Windows: https://nodejs.org/en/download/ 
 ```
 
-To run getButtonQuerySelectors.js: 
-```
-node getButtonQuerySelectors.js (Ensure temporary folders are deleted before each run!)
-```
-
 To install dependencies using npm:
 ```
 npm install --save-dev --save-exact jsdom jsdom-global website-scraper website-scraper-puppeteer
 ```
 
-Autoscript.py is reading from queries.txt file
-and the output is written to autogenscript.js
+Input: 
+```
+Output of guess.js stored in a file named "guess.txt"
+```
+
+To run AutoBleak: 
+```
+bash script.sh
+```
+
+Output:
+```
+autogenscript.js
+```
