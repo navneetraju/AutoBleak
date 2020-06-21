@@ -24,5 +24,5 @@ bash script.sh
 
 Output:
 ```
-autogenscript.js
+Generated configuration file for BLeak named "autogenscript.js"
 ```
